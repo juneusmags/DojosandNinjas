@@ -1,0 +1,16 @@
+*{
+    margin: 15px;
+    font-family: Balsamiq Sans;
+}
+.btn{
+    margin-left : 80px;
+    background-color: white;
+    width: 70px;
+    height: 25px;
+    box-shadow: 5px 5px;
+
+}
+
+a{
+    color: blue;
+}

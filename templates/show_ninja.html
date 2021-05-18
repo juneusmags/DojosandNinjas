@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Show</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/show_ninja_style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1>{{dojo['name']}} Ninjas</h1>
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+            {% for one_ninja in all_dojos %}
+            <tr>
+                <th>{{one_ninja["first_name"]}}</th>
+                <th>{{one_ninja["last_name"]}}</th>
+                <th>{{one_ninja["age"]}}</th>
+            </tr>
+            {%endfor%}
+        </table>
+        
+    </div>
+    <a href="/dojos">Home</a>
+</body>
+</html>

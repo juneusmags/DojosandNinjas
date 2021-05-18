@@ -1,0 +1,26 @@
+*{
+    margin: 15px;
+    font-family: Balsamiq Sans;
+}
+.container{
+    display: flex;
+}
+.list{
+    margin: 25px;
+    border: 2px solid black;
+    width: 500px;
+    
+}
+ul li{
+    list-style: none;
+}
+a{
+    color: blue;
+}
+.btn{
+    background-color: white;
+    width: 70px;
+    height: 27px;
+    box-shadow: 5px 5px;
+    margin-left: 100px;
+}
